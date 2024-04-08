@@ -9,17 +9,7 @@ class Node(object):
         self.data = data
         self.next = next
 
-def printlink(head):
-    if head is None:
-        print(None)
-    else:
-        probe = head
-        while probe is not None:
-            if probe.next is not None:
-                print(probe.data, end='->')
-            else:
-                print(probe.data)
-            probe=probe.next
+
 
 
 def sorted_insert(head, data):
@@ -37,7 +27,17 @@ def sorted_insert(head, data):
     curNode.next = Node(data, curNode.next)
     return head
 
-
+# def printlink(head):
+#     if head is None:
+#         print(None)
+#     else:
+#         probe = head
+#         while probe is not None:
+#             if probe.next is not None:
+#                 print(probe.data, end='->')
+#             else:
+#                 print(probe.data)
+#             probe=probe.next
 
     # if head is None:
     #     head = Node(data)
